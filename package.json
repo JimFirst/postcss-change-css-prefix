@@ -1,0 +1,28 @@
+{
+  "name": "postcss-change-css-prefix",
+  "version": "1.0.0",
+  "description": "a postcss plugin to change element-ui prefix",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yalc publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimFirst/postcss-change-css-prefix.git"
+  },
+  "keywords": [
+    "postcss",
+    "prefix",
+    "element-ui"
+  ],
+  "author": "154211320@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimFirst/postcss-change-css-prefix/issues"
+  },
+  "homepage": "https://github.com/JimFirst/postcss-change-css-prefix#readme",
+  "peerDependencies": {
+    "postcss": "^7.0.0"
+  }
+}
