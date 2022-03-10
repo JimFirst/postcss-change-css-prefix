@@ -12,8 +12,8 @@ module.exports = postcss.plugin('postcss-change-css-prefix', function (opts = {}
         !selector.includes(replace)
       ) {
         const clone = rule.clone()
-        const reg = new RegExp(`(^|(\\s)*|(\.))${prefix}(?!icon)`, 'g')
-        clone.selector = selector.replace(reg, `$1${replace}`)
+    		const reg = new RegExp(`(^|(\\s)*)\\.${prefix}(?!icon)`, 'g')
+        clone.selector = selector.replace(reg, `$1.${replace}`)
         rule.replaceWith(clone)
       }
     })
