@@ -1,6 +1,6 @@
 const postcss = require('postcss')
 module.exports = postcss.plugin('postcss-change-css-prefix', function (opts = {}) {
-  const { prefix = 'el-', replace = 'gt-' } = opts || {}
+  const { prefix = 'el-', replace = 'gp-' } = opts || {}
   
   // 接收两个参数，第一个是每个css文件的ast，第二个参数中可获取转换结果相关信息(包括当前css文件相关信息)
   function plugin(css, result) {
