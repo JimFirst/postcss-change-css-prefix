@@ -1,4 +1,6 @@
 const postcss = require('postcss')
+const { replaceStr } = require('../src/utils')
+
 module.exports = postcss.plugin('postcss-change-css-prefix', function (opts = {}) {
   const { prefix = 'el-', replace = 'gp-' } = opts || {}
   
@@ -12,8 +14,7 @@ module.exports = postcss.plugin('postcss-change-css-prefix', function (opts = {}
         !selector.includes(replace)
       ) {
         const clone = rule.clone()
-    		const reg = new RegExp(`(^|(\\s)*|\\.)${prefix}(?!icon)`, 'g')
-        clone.selector = selector.replace(reg, `$1${replace}`)
+        clone.selector = replaceStr(selector, prefix, replace)
         rule.replaceWith(clone)
       }
     })
