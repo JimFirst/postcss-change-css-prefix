@@ -1,10 +1,10 @@
 {
   "name": "postcss-change-css-prefix",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a postcss plugin to change element-ui prefix",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "dev": "yalc publish"
   },
   "repository": {
@@ -25,5 +25,8 @@
   "peerDependencies": {
     "postcss": "^7.0.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
